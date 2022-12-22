@@ -4,5 +4,8 @@
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "sstream": "cpp"
+    }
 }

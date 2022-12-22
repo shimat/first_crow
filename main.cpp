@@ -1,4 +1,5 @@
-#include "crow.h"
+#include <crow.h>
+#include <opencv2/opencv.hpp>
 
 /*
 class CustomLogger : public crow::ILogHandler
@@ -24,7 +25,7 @@ int main()
 
     CROW_ROUTE(app, "/")
     ([]() {
-        CROW_LOG_ERROR << "Error Log";
+        CROW_LOG_ERROR << "Tick Count = " << cv::getTickCount();
         return "Hello world";
     });
 

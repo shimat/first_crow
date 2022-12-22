@@ -34,8 +34,16 @@ RUN git clone https://github.com/opencv/opencv.git -b 4.6.0 --single-branch --de
     -DBUILD_SHARED_LIBS=OFF \
     -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_LIST=core,improc,imgcodecs,features2d,photo \
+    -DBUILD_JAVA=OFF \
+    -DBUILD_TESTS=OFF \
+    -DBUILD_PERF_TESTS=OFF \
+    -DWITH_ADE=OFF \
+    -DWITH_FFMPEG=OFF \
+    -DWITH_GSTREAMER=OFF \
+    -DWITH_OPENEXR=OFF \
     -DWITH_PROTOBUF=OFF \
     -DWITH_QUIRC=OFF \
+    -DWITH_VTK=OFF \
   && make -j$(nproc) \
   && make install \
   && make clean \
