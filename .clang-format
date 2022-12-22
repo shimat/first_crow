@@ -1,0 +1,5 @@
+---
+BasedOnStyle: Microsoft    
+IndentWidth: 4
+#ColumnsLimit: 0
+#ForEachMacros : ["CROW_ROUTE"]
