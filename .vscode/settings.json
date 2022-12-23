@@ -6,6 +6,7 @@
     "editor.formatOnPaste": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "files.associations": {
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "limits": "cpp"
     }
 }
